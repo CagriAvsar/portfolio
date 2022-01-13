@@ -1,0 +1,24 @@
+.footer-container {
+    width: 1440px;
+    height: 208px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer-content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+            color: #8A8A8A;
+            font-size: 18px;
+        }
+        span {
+            margin-top: 24px;
+            font-size: 18px;
+            line-height: 36px;
+            color: #6D6D6D;
+        }
+    }
+}

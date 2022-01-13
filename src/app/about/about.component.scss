@@ -1,0 +1,82 @@
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.mgt-16 {
+    margin-top: 16px;
+}
+
+.about-section {
+    padding-left: 66px;
+    padding-right: 66px;
+    h1 {
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 120px;
+    }
+    .about-me {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.385714px;
+        color: #6D6D6D;
+    }
+    img {
+        width: 100%;
+        object-fit: cover;
+        margin: 64px 0;
+    }
+    .adress-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .adress-content {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 36px;
+            letter-spacing: 0.385714px;
+            color: #6D6D6D;
+            max-width: 550px;
+        }
+        .adress {
+            position: absolute;
+            bottom: 48px;
+            right: 118px;
+            display: flex;
+            flex-direction: column;
+            background: #FEE383;
+            padding: 32px;
+            width: 300px;
+            .adress-headline {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 6.33143px;
+                color: #7E7C7C;
+                opacity: 0.6;
+            }
+            span:nth-child(1) {
+                margin-top: 0;
+            }
+        }
+    }
+    .para-2 {
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.385714px;
+        color: #6D6D6D;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+    .signature {
+        font-family: Linoleo Script;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 80px;
+        line-height: 76px;
+        letter-spacing: 1.71429px;
+        color: #6D6D6D;
+    }
+}

@@ -1,0 +1,52 @@
+.space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-section-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 66px;
+    padding-right: 66px;
+    .works {
+        display: flex;
+        align-items: flex-start;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 33px;
+        letter-spacing: 0.642857px;
+        color: #6D6D6D;
+        margin-bottom: 32px;
+        p {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 36px;
+            /* identical to box height, or 200% */
+            letter-spacing: 0.385714px;
+            margin-block-start: 0;
+        }
+        .work-description {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 33px;
+            /* identical to box height, or 183% */
+            letter-spacing: 0.385714px;
+            color: #6D6D6D;
+        }
+    }
+    .pill {
+        background: #FEE383;
+        border-radius: 16px;
+        border-radius: 16px;
+        font-size: 10px;
+        padding: 6px;
+        font-size: 12px;
+        margin-right: 16px;
+    }
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 120px;
+    padding-left: 66px;
+}

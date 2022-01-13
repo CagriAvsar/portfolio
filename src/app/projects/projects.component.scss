@@ -1,0 +1,45 @@
+.project-section-container {
+    padding-left: 66px;
+    padding-right: 66px;
+    h1 {
+        font-size: 60px;
+        line-height: 120px;
+    }
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        .project-description-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 64px;
+            .description-headline {
+                font-weight: bold;
+                font-size: 54px;
+                line-height: 81px;
+                letter-spacing: -0.257143px;
+                color: #999999;
+            }
+            .description-content-container {
+                max-width: 500px;
+                .description-content {
+                    font-size: 18px;
+                    line-height: 33px;
+                    letter-spacing: 0.385714px;
+                    color: #6D6D6D;
+                }
+            }
+            img {
+                cursor: pointer;
+                height: 300px;
+                object-fit: contain;
+                transition: 255ms ease-in-out;
+                &:hover {
+                    transform: scale(1.5);
+                    margin-left: 150px;
+                    width: 350px;
+                }
+            }
+        }
+    }
+}

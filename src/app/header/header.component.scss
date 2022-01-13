@@ -1,0 +1,80 @@
+header {
+    height: 100vh;
+    nav {
+        position: absolute;
+        top: 60.5px;
+        left: 386px;
+        height: 24px;
+        z-index: 2;
+        display: flex;
+        justify-content: space-between;
+        width: 475px;
+        a {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 6.33143px;
+            color: #000000;
+            text-decoration: none;
+            transition: 250ms ease-in-out;
+            margin: 0;
+            &:hover {
+                color: #FEE383;
+                letter-spacing: 4px;
+            }
+        }
+    }
+    .profile-img {
+        background-image: url('/assets/imgs/person.jpg');
+        z-index: 2;
+        position: absolute;
+        right: 0px;
+        top: 137px;
+        width: 450px;
+        height: 450px;
+    }
+    .background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 66px;
+        // left: 321px;
+        width: 80%;
+        background: #F6F6F6;
+    }
+    .introduction-container {
+        position: absolute;
+        top: 50px;
+        left: 66px;
+        h1 {
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 40px;
+            color: #000000;
+            span {
+                color: #FEE383;
+            }
+        }
+        .social-media img {
+            width: 50px;
+        }
+    }
+    .download-btn {
+        position: absolute;
+        left: 66px;
+        bottom: 30px;
+        padding: 30px 20px;
+        width: 355px;
+        border: none;
+        cursor: pointer;
+        background: #FEE383;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 8.29714px;
+        opacity: 0.9;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
