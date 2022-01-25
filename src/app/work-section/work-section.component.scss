@@ -25,6 +25,9 @@
             letter-spacing: 0.385714px;
             margin-block-start: 0;
         }
+        .work-description-container {
+            max-width: 60%;
+        }
         .work-description {
             font-weight: normal;
             font-size: 18px;
@@ -49,4 +52,73 @@ h1 {
     font-size: 60px;
     line-height: 120px;
     padding-left: 66px;
+}
+
+@media (max-width: 950px) {
+    .work-section-container {
+        margin-top: 245px;
+        padding-left: 8px;
+    }
+}
+
+// ###################################################################
+// ###################################################################
+// --------------------  RESPONSIVE 850px  --------------------
+// ###################################################################
+// ###################################################################
+@media (max-width: 850px) {
+    .work-section-container {
+        margin-top: 290px;
+        padding: 8px;
+        width: fit-content;
+        .works {
+            flex-direction: column;
+            font-size: 50px;
+            .works-header {
+                font-size: 32px;
+            }
+            .pill-container {
+                margin: 30px 0;
+                padding: 0 38px;
+                .pill {
+                    display: flex;
+                    justify-content: center;
+                    font-size: 20px;
+                    margin-top: 24px;
+                }
+            }
+            p {
+                font-size: 25px;
+                margin-top: 20px;
+                line-height: 24px;
+            }
+            .work-description-container {
+                max-width: 100%;
+                .work-description {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+    h1 {
+        font-size: 45px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 35px;
+    }
+    .works {
+        .works-header {
+            font-size: 22px !important;
+        }
+    }
+    .pill {
+        padding: 0 !important;
+        font-size: 14px !important;
+    }
 }

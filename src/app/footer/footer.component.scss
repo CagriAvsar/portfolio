@@ -1,24 +1,75 @@
-.footer-container {
-    width: 1440px;
-    height: 208px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .footer-content-container {
+footer {
+    position: relative;
+    .footer-social-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        padding: 8px;
+        border-bottom: solid 1px #eeefff;
+        height: 250px;
+        .footer-social-media {
+            display: flex;
+            align-items: center;
+            margin-top: 45px;
+            img {
+                width: 50px;
+                height: 50px;
+                margin-left: 20px;
+            }
+        }
+    }
+    .footer-links-container {
         a {
             text-decoration: none;
-            color: #8A8A8A;
-            font-size: 18px;
+            margin-left: 20px;
+            color: #000;
+            transition: 225ms ease-in-out;
+            &:hover {
+                color: #fee383;
+            }
         }
-        span {
-            margin-top: 24px;
-            font-size: 18px;
-            line-height: 36px;
-            color: #6D6D6D;
+    }
+    .footer-imprint-container {
+        padding-bottom: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 14px 0;
+        .footer-content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            a {
+                text-decoration: none;
+                color: #8A8A8A;
+                font-size: 18px;
+            }
+            span {
+                margin-top: 10px;
+                font-size: 18px;
+                line-height: 36px;
+                color: #6D6D6D;
+            }
+        }
+    }
+}
+
+@media (max-width: 280px) {
+    .footer-links-container {
+        a {
+            margin-left: 14px !important;
+            font-size: 14px;
+        }
+    }
+    .footer-social-container {
+        a {
+            img {
+                width: 40px !important;
+                height: 40px !important;
+            }
         }
     }
 }

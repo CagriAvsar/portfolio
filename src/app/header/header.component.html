@@ -1,13 +1,26 @@
 <header>
-    <nav>
-        <a routerLink="/work-section">WORK</a>
-        <a href="#">PROJECTS</a>
-        <a href="#">ABOUT</a>
-    </nav>
-    <div class="profile-img"></div>
-    <div class="background">
-
+    <div>
+        <nav>
+            <img src="./assets/imgs/menu-4-48 (1).png" class="hide" id="toggle_btn">
+            <a routerLink="/work-section">WORK</a>
+            <a href="#">PROJECTS</a>
+            <a href="#">ABOUT</a>
+        </nav>
     </div>
+
+    <div class="phone-menu-container">
+        <aside id="side_menu">
+            <div class="side-menu">
+                <a href="#">WORK</a>
+                <a href="#">PROJECTS</a>
+                <a href="#">ABOUT</a>
+            </div>
+        </aside>
+        <img src="./assets/imgs/person.jpg" class="profile-responsiv-img hide">
+    </div>
+
+    <div class="profile-img"></div>
+    <div class="background"></div>
 
     <div class="introduction-container">
         <h1>
@@ -17,12 +30,14 @@
         </h1>
 
         <div class="social-media">
-            <a href="https://github.com/CagriAvsar" target="blank"><img src="/assets/imgs/github-fill.png" alt=""></a>
-            <a href="#"><img src="/assets/imgs/LinkedIn 1.png" alt=""></a>
-            <a href="#"></a>
+            <a href="https://github.com/CagriAvsar" target="blank"><img src="./assets/imgs/github-fill.png" alt="Github"></a>
+            <a href="https://www.linkedin.com/in/cagri-avsar-3837a522b/" target="blank"><img src="./assets/imgs/LinkedIn 1.png" alt="LinkedIn"></a>
+            <a href="https://www.xing.com/profile/Cagri_Avsar2/cv" target="blank"><img src="./assets/imgs/xing-fill.png" alt="LinkedIn"></a>
+            <a href="https://api.whatsapp.com/send?phone=1794128203&text=Send20%a20%quote" target="blank"><img src="./assets/imgs/whatsapp-48.png" alt="WhatsApp"></a>
         </div>
     </div>
 
-    <button class="download-btn">DOWNLOAD</button>
-
+    <div class="dwnl-btn-container">
+        <button class="download-btn">DOWNLOAD C.V.</button>
+    </div>
 </header>

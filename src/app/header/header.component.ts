@@ -12,4 +12,12 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  // openPhoneMenu() {
+  //  let toggleBtn = document.getElementById('toggle_btn');
+  //  let sideMenu = document.getElementById('side_menu');
+  //  toggleBtn?.addEventListener('click') => {
+
+  //  }
+  // }
 }

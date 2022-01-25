@@ -23,6 +23,11 @@
             input {
                 margin-bottom: 50px;
                 padding: 8px;
+                border: none;
+            }
+            textarea {
+                border: none;
+                padding: 4px 6px;
             }
             button {
                 background: #0F0F10;
@@ -31,6 +36,7 @@
                 height: 75px;
                 margin-top: 50px;
                 padding: 24px 33px;
+                border: none;
                 cursor: pointer;
                 &:hover {
                     color: #FEE383;
@@ -39,3 +45,55 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .form-container {
+        flex-direction: column;
+        margin-top: 90px;
+        .form-content {
+            max-width: 100%;
+            h1 {
+                font-size: 45px;
+            }
+            span {
+                font-size: 20px;
+            }
+        }
+        .form-inputs-container {
+            form {
+                width: 100%;
+                label {
+                    margin-bottom: 10px;
+                }
+                input {
+                    padding: 12px;
+                }
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .form-container {
+        width: 61;
+    }
+    h1 {
+        font-size: 35px !important;
+    }
+}
+
+// @media (max-width: 280px) {
+//     h1 {
+//         font-size: 24px !important;
+//     }
+//     button {
+//         font-size: 10px;
+//         width: 110px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//     }
+// }

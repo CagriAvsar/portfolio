@@ -24,6 +24,7 @@
     }
     img {
         width: 100%;
+        height: 500px;
         object-fit: cover;
         margin: 64px 0;
     }
@@ -42,13 +43,15 @@
         }
         .adress {
             position: absolute;
-            bottom: 48px;
+            bottom: 95px;
             right: 118px;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             background: #FEE383;
             padding: 32px;
-            width: 300px;
+            width: 335px;
+            height: 250px;
             .adress-headline {
                 font-weight: 500;
                 font-size: 16px;
@@ -56,6 +59,10 @@
                 letter-spacing: 6.33143px;
                 color: #7E7C7C;
                 opacity: 0.6;
+            }
+            a {
+                text-decoration: none;
+                color: #000;
             }
             span:nth-child(1) {
                 margin-top: 0;
@@ -71,12 +78,74 @@
         margin-bottom: 64px;
     }
     .signature {
-        font-family: Linoleo Script;
+        font-family: cursive;
         font-style: normal;
         font-weight: normal;
-        font-size: 80px;
+        font-size: 40px;
         line-height: 76px;
         letter-spacing: 1.71429px;
         color: #6D6D6D;
     }
 }
+
+@media (max-width: 1200px) {
+    .about-section {
+        padding: 0;
+        h1 {
+            font-size: 45px;
+            padding: 8px;
+        }
+        .about-me {
+            padding: 8px;
+        }
+        .adress-container {
+            flex-direction: column-reverse;
+            position: relative;
+            .adress-content {
+                position: absolute;
+                max-width: 100%;
+                padding: 0px 8px;
+            }
+            .adress {
+                position: inherit;
+                right: 0;
+                bottom: 185px;
+                padding: 60px;
+                font-size: 20px;
+                width: 50%;
+                span {
+                    font-size: 18px;
+                }
+            }
+        }
+        .para-2 {
+            padding: 0 8px;
+        }
+        .signature {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 35px !important;
+    }
+    .about-me {
+        font-size: 16px !important;
+    }
+    .adress {
+        font-size: 16px !important;
+        margin-bottom: 60px;
+    }
+}
+
+// @media (max-width: 280px) {
+//     .adress {
+//         margin-bottom: 180px;
+//         right: 7px !important;
+//         .column {
+//             font-size: 14px;
+//         }
+//     }
+// }
