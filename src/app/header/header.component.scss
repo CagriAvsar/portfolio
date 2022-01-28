@@ -57,12 +57,12 @@ header {
             }
         }
         .social-media {
-            a {
-                margin: 2px 10px;
+            a:nth-child(2n) {
+                margin-left: 12px;
             }
         }
         img {
-            width: 50px;
+            width: 45px;
         }
     }
     .download-btn {
