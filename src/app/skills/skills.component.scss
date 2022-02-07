@@ -1,0 +1,23 @@
+h1 {
+    padding-left: 66px;
+}
+
+.mrgn-80 {
+    margin-top: 80px;
+}
+
+.main-container {
+    padding: 0 66px;
+}
+
+.skill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px 66px;
+    background-color: (var(--gold-color));
+    .skill-row {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -38,7 +38,7 @@
         }
     }
     .pill {
-        background: #FEE383;
+        background: var(--gold-color);
         border-radius: 16px;
         border-radius: 16px;
         font-size: 10px;
@@ -56,7 +56,7 @@ h1 {
 
 @media (max-width: 950px) {
     .work-section-container {
-        margin-top: 245px;
+        margin-top: 545px;
         padding-left: 8px;
     }
 }
@@ -68,7 +68,7 @@ h1 {
 // ###################################################################
 @media (max-width: 850px) {
     .work-section-container {
-        margin-top: 290px;
+        margin-top: 540px;
         padding: 8px;
         width: fit-content;
         .works {

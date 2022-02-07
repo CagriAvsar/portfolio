@@ -1,5 +1,5 @@
 .form-container {
-    background-color: #FEE383;
+    background-color: var(--gold-color);
     margin-top: 264px;
     padding: 66px 72px 66px 66px;
     display: flex;
@@ -39,7 +39,7 @@
                 border: none;
                 cursor: pointer;
                 &:hover {
-                    color: #FEE383;
+                    color: var(--gold-color);
                 }
             }
         }

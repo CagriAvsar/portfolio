@@ -19,19 +19,20 @@ header {
             transition: 250ms ease-in-out;
             margin: 0;
             &:hover {
-                color: #FEE383;
+                color: var(--gold-color);
                 transform: scaleX(0.9);
             }
         }
     }
     .profile-img {
-        background-image: url('../../assets/imgs/person.jpg');
+        background-image: url('../../assets/imgs/profile_img.JPG');
         z-index: 2;
         position: absolute;
         right: 0px;
-        top: 137px;
+        top: 90px;
         width: 450px;
-        height: 450px;
+        height: 564px;
+        background-position: center;
     }
     .background {
         position: absolute;
@@ -52,7 +53,7 @@ header {
             line-height: 40px;
             color: #000000;
             span {
-                color: #FEE383;
+                color: var(--gold-color);
                 margin-left: 14px;
             }
         }
@@ -73,7 +74,7 @@ header {
         width: 355px;
         border: none;
         cursor: pointer;
-        background: #FEE383;
+        background: var(--gold-color);
         font-weight: 500;
         font-size: 24px;
         line-height: 36px;
@@ -144,7 +145,7 @@ header {
             display: block;
             margin-top: 80px;
             width: 100%;
-            height: 400px;
+            height: 657px;
             object-fit: cover;
         }
     }
@@ -155,7 +156,7 @@ header {
         display: none;
     }
     .introduction-container {
-        top: 500px !important;
+        top: 770px !important;
         left: 8px !important;
         right: 0;
         display: flex;
@@ -167,9 +168,13 @@ header {
             }
         }
     }
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+    }
     .download-btn {
         left: 8px !important;
-        top: 860px;
+        top: 1120px;
         height: 95px;
         opacity: 1 !important;
     }
