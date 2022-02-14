@@ -1,5 +1,6 @@
 h1 {
     padding-left: 66px;
+    margin-top: 100px;
 }
 
 .mrgn-80 {
@@ -14,10 +15,36 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 45px 66px;
     background-color: (var(--gold-color));
+    margin-bottom: 150px;
     .skill-row {
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
+        .skill-img-container {
+            position: relative;
+            background-color: black;
+            padding: 16px;
+            border-radius: 55px 55px 0 0;
+            width: 75px;
+            height: 66px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            position: absolute;
+            bottom: 50px;
+        }
+        span {
+            color: white;
+            margin-top: 45px;
+        }
+        p {
+            color: white;
+            margin-top: 55px;
+        }
     }
 }

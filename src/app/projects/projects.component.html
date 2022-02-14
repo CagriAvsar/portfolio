@@ -5,52 +5,33 @@
 
     <div class="projects-container">
 
-        <div class="project-description-container">
-            <div class="project-img-container">
-                <a href="http://cagri-avsar.developerakademie.com/modul11-el-pollo-loco/el-pollo-loco/index.html" target="blank">
-                    <img src="./assets/imgs/pollo-loco.png" class="project-img">
-                </a>
-            </div>
-            <div class="description-content-container">
-                <h3 class="description-headline">El Pollo Loco</h3>
-                <span class="description-content">
-                    I learned a lot about object-oriented programming with this Jump´n Run game. I learned how to create a complex project with different classes of clear functions and code.
-                </span>
-            </div>
+        <div class="projects-btn-container">
+            <button (click)="showProjects('all')">All</button>
+            <button (click)="showProjects('javascript')">JavaScript</button>
+            <button (click)="showProjects('angular')">Angular</button>
         </div>
 
-        <div class="project-description-container">
-            <div class="description-content-container">
-                <h3 class="description-headline">PokeDex</h3>
-                <span class="description-content">
-                    <b>Come catch`em all!</b><br>
-                    With API's it's no longer a problem.
-                    In this project I learned to work with
-                    interfaces and to work with the data from the APIs.                
-                </span>
-            </div>
+        <div class="project-description-container" *ngFor="let project of filteredProjects">
             <div class="project-img-container">
-                <a href="http://cagri-avsar.developerakademie.com/modul9/pokedex2/index.html" target="blank">
-                    <img src="./assets/imgs/pokedex.png" class="project-img">
-                </a>
-            </div>
-        </div>
-
-        <div class="project-description-container">
-            <div class="project-img-container">
-                <a href="http://gruppe-114.developerakademie.net/Kanban%20Gruppenarbeit/addTask.html" target="blank">
-                    <img src="./assets/imgs/canban.PNG" class="project-img">
-                </a>
+                <img [src]="project.img" class="project-img" alt="Project Image">
+                <div class="overlay-img">
+                    <p> {{ project.name }} </p>
+                    <p>{{ project.category }}</p>
+                    <a href="project.url" target="blank">
+                        <button>VIEW</button>
+                    </a>
+                </div>
             </div>
             <div class="description-content-container">
-                <h3 class="description-headline">Kanban Board</h3>
+                <h3 class="description-headline">{{ project.name }}</h3>
                 <span class="description-content">
-                    It's easier to split up the work and keep track of things when others are working on the same project.
-                    With this group project, I not only had the experience of working with a Kanban Board, but also created one myself.  
+                    {{ project.description }}
                 </span>
             </div>
-        </div>
+            <div>
 
+            </div>
+        </div>
     </div>
 
 </div>
