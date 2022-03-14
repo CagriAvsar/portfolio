@@ -62,17 +62,21 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: all 225ms ease-in-out;
             &:hover .overlay-img {
                 opacity: 1;
+                transform: scale(1.1);
             }
             &:hover .project-img {
-                filter: blur(3px);
+                filter: blur(2px);
+                transform: scale(1.1);
             }
         }
         .overlay-img {
             opacity: 0;
             padding: 20px;
             position: absolute;
+            font-size: 24px;
             top: 0;
             right: 0;
             left: 0;
@@ -93,6 +97,9 @@
                     background-color: var(--gold-color);
                     letter-spacing: 5px;
                     font-weight: 700;
+                     :hover {
+                        background-color: red;
+                    }
                 }
             }
         }
@@ -147,5 +154,19 @@
         .description-content {
             font-size: 18px !important;
         }
+    }
+}
+
+@media (max-width: 700px) {
+    .project-section-container {
+        padding: 0 50px;
+    }
+    .projects-btn-container {
+        align-items: inherit !important;
+        flex-direction: column;
+    }
+    .overlay-img {
+        align-items: center;
+        font-size: 21px !important;
     }
 }

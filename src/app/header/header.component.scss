@@ -1,5 +1,11 @@
 header {
     height: 100vh;
+    .mylogo {
+        position: absolute;
+        top: 30px;
+        left: 60px;
+        height: 80px;
+    }
     nav {
         position: absolute;
         top: 60.5px;
@@ -45,7 +51,7 @@ header {
     }
     .introduction-container {
         position: absolute;
-        top: 50px;
+        top: 90px;
         left: 66px;
         h1 {
             font-weight: bold;

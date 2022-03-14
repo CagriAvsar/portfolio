@@ -1,28 +1,28 @@
 <div class="project-section-container">
 
-    <h1>My Projects</h1>
+    <h1 id="projects">My Projects</h1>
 
 
     <div class="projects-container">
 
         <div class="projects-btn-container">
             <button (click)="showProjects('all')">All</button>
-            <button (click)="showProjects('javascript')">JavaScript</button>
-            <button (click)="showProjects('angular')">Angular</button>
+            <button (click)="showProjects('Javascript')">JavaScript</button>
+            <button (click)="showProjects('Angular')">Angular</button>
         </div>
 
-        <div class="project-description-container" *ngFor="let project of filteredProjects">
+        <div class="project-description-container" *ngFor="let project of filteredProjects; let i = index">
             <div class="project-img-container">
-                <img [src]="project.img" class="project-img" alt="Project Image">
+                <img [src]="project.img" class="project-img" alt="Project Image" data-aos="fade-right">
                 <div class="overlay-img">
                     <p> {{ project.name }} </p>
                     <p>{{ project.category }}</p>
-                    <a href="project.url" target="blank">
+                    <a href="{{ project.url }}" target="blank">
                         <button>VIEW</button>
                     </a>
                 </div>
             </div>
-            <div class="description-content-container">
+            <div class="description-content-container" data-aos="fade-left">
                 <h3 class="description-headline">{{ project.name }}</h3>
                 <span class="description-content">
                     {{ project.description }}

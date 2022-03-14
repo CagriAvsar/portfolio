@@ -11,40 +11,54 @@ h1 {
     padding: 0 66px;
 }
 
-.skill-container {
+// WRAP PROBE4
+.main {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 45px 66px;
-    background-color: (var(--gold-color));
-    margin-bottom: 150px;
-    .skill-row {
+    background-color: var(--gold-color);
+    margin: 0 66px;
+    padding: 16px;
+    .child-container {
         display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        .skill-img-container {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        .skill-img-cont {
             position: relative;
-            background-color: black;
-            padding: 16px;
             border-radius: 55px 55px 0 0;
-            width: 75px;
-            height: 66px;
+            width: 25%;
             display: flex;
             justify-content: center;
-            align-items: center;
+            margin: 20px 16px;
+            img {
+                width: 70px;
+                height: 60px;
+                object-fit: contain;
+                position: absolute;
+                bottom: 80px;
+                border-radius: 100%;
+                padding: 8px;
+            }
+            span {
+                color: white;
+                margin-top: 45px;
+            }
+            .skill-elem {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: black;
+                border-radius: 12px 12px 0 0;
+                width: 145px;
+                height: 100px;
+                padding: 8px;
+            }
         }
-        img {
-            position: absolute;
-            bottom: 50px;
-        }
-        span {
-            color: white;
-            margin-top: 45px;
-        }
-        p {
-            color: white;
-            margin-top: 55px;
-        }
+    }
+}
+
+@media (max-width: 700px) {
+    .skill-img-cont {
+        width: unset !important;
     }
 }

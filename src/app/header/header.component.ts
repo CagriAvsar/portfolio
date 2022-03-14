@@ -12,6 +12,10 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  scrollToSection(position: number) {
+
+  }
+
 
   // openPhoneMenu() {
   //  let toggleBtn = document.getElementById('toggle_btn');

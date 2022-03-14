@@ -1,12 +1,13 @@
-<h1>My Skills</h1>
-<div class="main-container">
-    <div class="skill-container">
-        <div class="skill-row">
-            <div class="skill-img-container" *ngFor="let skill of filteredSkills; let i = index">
+<h1 id="sec-1">My Skills</h1>
+
+
+<div class="main">
+    <div class="child-container">
+        <div class="skill-img-cont" *ngFor="let skill of filteredSkills; let i = index" data-aos="flip-left">
+            <div class="skill-elem">
                 <img [src]="skill.image" alt="HTML/CSS">
                 <span>{{ skill.name }}</span>
             </div>
         </div>
-
     </div>
 </div>

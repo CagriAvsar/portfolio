@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  projects = [
+  projects : { name : string, img : string, description : string, url: string, category: string}[]  = [
     {
       name: 'El Pollo Loco',
       img: './assets/imgs/pollo-loco.png',
       description: 'I learned a lot about object-oriented programming with this Jump´n Run game. I learned how to create a complex project with different classes of clear functions and code.',
-      url: '"http://cagri-avsar.developerakademie.com/modul11-el-pollo-loco/el-pollo-loco/index.html"',
+      url: 'http://cagri-avsar.developerakademie.com/modul11-el-pollo-loco/el-pollo-loco/index.html',
       category: 'Javascript'
     },
     {
@@ -41,6 +41,7 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+   
   }
 
   filteredProjects = this.projects;
