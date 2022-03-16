@@ -2,10 +2,10 @@
     <div>
         <nav>
             <img src="./assets/imgs/menu-4-48 (1).png" class="hide" id="toggle_btn">
-            <a routerLink="/work-section">WORK</a>
+            <a href="#work">WORK</a>
             <a href="#project">PROJECTS</a>
             <a href="#about">ABOUT</a>
-            <a href="#skills" (click)="scrollToSection(1)">SKILLS</a>
+            <a href="#skills">SKILLS</a>
         </nav>
         <img src="./assets/imgs/mylogo.png" alt="My Logo" class="mylogo">
     </div>
@@ -18,7 +18,9 @@
                 <a href="#">ABOUT</a>
             </div>
         </aside>
-        <img src="./assets/imgs/profile_img.JPG" class="profile-responsiv-img hide">
+        <div>
+            <img src="./assets/imgs/profile_img.JPG" class="profile-responsiv-img hide">
+        </div>
     </div>
 
     <div class="profile-img"></div>
@@ -40,6 +42,6 @@
     </div>
 
     <div class="dwnl-btn-container">
-        <button class="download-btn">DOWNLOAD C.V.</button>
+        <a href="./assets/downloads/cv.pdf" target="blank"><button class="download-btn">DOWNLOAD C.V.</button></a>
     </div>
 </header>

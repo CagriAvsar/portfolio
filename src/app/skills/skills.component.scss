@@ -11,7 +11,6 @@ h1 {
     padding: 0 66px;
 }
 
-// WRAP PROBE4
 .main {
     display: flex;
     justify-content: center;
@@ -54,6 +53,15 @@ h1 {
                 padding: 8px;
             }
         }
+    }
+}
+
+@media (max-width: 950px) {
+    h1 {
+        padding-left: 16px;
+    }
+    .main {
+        margin: 0 16px;
     }
 }
 

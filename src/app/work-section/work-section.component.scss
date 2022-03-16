@@ -68,8 +68,8 @@ h1 {
 // ###################################################################
 @media (max-width: 850px) {
     .work-section-container {
-        margin-top: 540px;
-        padding: 8px;
+        margin-top: 25em;
+        padding: 8px 16px;
         width: fit-content;
         .works {
             flex-direction: column;
@@ -79,7 +79,7 @@ h1 {
             }
             .pill-container {
                 margin: 30px 0;
-                padding: 0 38px;
+                padding: 0 16px;
                 .pill {
                     display: flex;
                     justify-content: center;
@@ -108,7 +108,22 @@ h1 {
     }
 }
 
+@media (max-width: 545px) {
+    .work-section-container {
+        margin-top: 31em;
+    }
+}
+
+@media (max-width: 420px) {
+    .work-section-container {
+        margin-top: 21em;
+    }
+}
+
 @media (max-width: 380px) {
+    .work-section-container {
+        margin-top: 38em !important;
+    }
     h1 {
         font-size: 35px;
     }

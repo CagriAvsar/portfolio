@@ -1,4 +1,4 @@
-<div class="form-container">
+<!-- <div class="form-container">
 
     <div class="form-content">
         <h1>Let`s talk about Business</h1>
@@ -8,15 +8,49 @@
     </div>
 
     <div class="form-inputs-container">
-        <form action="">
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
             <label for="">Name</label>
-            <input type="text" name="name" required>
+            <input type="text" placeholder="What is your Name?" id="name" required [(ngModel)]="contact.name" name="name" #name="ngModel">
             <label for="">Email</label>
-            <input type="email" name="email" required>
+            <input type="email" placeholder="What is your Email Address?" [(ngModel)]="contact.email" name="email" #email="ngModel">
             <label for="">Message</label>
-            <textarea name="message" id="" cols="30" rows="10"></textarea>
-            <button type="submit">LET`S GET STARTED</button>
+            <textarea name="text" rows="10" placeholder="What would you like to tell me?" required [(ngModel)]="contact.message" name="message" #message="ngModel">
+            <button type="submit" [disabled]="!contactForm.form.valid" (click)="showSending()">LET`S GET STARTED</button>
         </form>
+         <div *ngIf="successActive" class="mailSuccess">
+                <h2>Your message has been sent successfully</h2>
+            </div>
     </div>
 
+</div> -->
+
+<div class="contact" id="contact">
+    <div class="section-content">
+        <div class="contact-text">
+            <h1>Contact Me</h1>
+            <p>Get in touch with me via the contact form below <i>c.avsar@hotmail.com</i> </p>
+        </div>
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+            <div class="inputContainer">
+
+                <input type="text" placeholder="What is your Name?" id="name" required [(ngModel)]="contact.name" name="name" #name="ngModel" />
+            </div>
+            <div class="inputContainer">
+
+                <input type="email" placeholder="What is your Email Address?" [(ngModel)]="contact.email" name="email" #email="ngModel" />
+            </div>
+            <div *ngIf="successActive" class="mailSuccess">
+                <h2>Your message has been sent successfully</h2>
+            </div>
+            <div class="inputContainer">
+
+                <textarea id="" rows="10" placeholder="What would you like to tell me?" required [(ngModel)]="contact.message" name="message" #message="ngModel"></textarea>
+                <div class="btn-container">
+                    <button type="submit" [disabled]="!contactForm.form.valid" (click)="showSending()">
+                        Send
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>

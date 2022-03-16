@@ -106,9 +106,10 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     .project-section-container {
         flex-direction: column;
+        overflow-x: hidden;
         h1 {
             font-size: 45px;
         }
@@ -149,10 +150,22 @@
 }
 
 @media (max-width: 950px) {
+    .project-section-container {
+        overflow-x: hidden;
+        padding: 0 16px !important;
+        h1 {
+            font-size: revert;
+        }
+    }
     .description-content-container {
         max-width: fit-content !important;
         .description-content {
             font-size: 18px !important;
+        }
+    }
+    .projects-btn-container {
+        button {
+            margin-left: unset !important;
         }
     }
 }

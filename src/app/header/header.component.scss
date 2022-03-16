@@ -36,7 +36,7 @@ header {
         position: absolute;
         right: 0px;
         top: 90px;
-        width: 450px;
+        width: 580px;
         height: 564px;
         background-position: center;
     }
@@ -130,6 +130,11 @@ header {
     header {
         display: flex;
         flex-direction: column;
+        .mylogo {
+            height: 50px;
+            top: 1em;
+            left: 1.2em;
+        }
         nav {
             top: 18px;
             right: 8px;
@@ -163,7 +168,7 @@ header {
     }
     .introduction-container {
         top: 770px !important;
-        left: 8px !important;
+        left: 16px !important;
         right: 0;
         display: flex;
         flex-direction: column-reverse;
@@ -179,7 +184,7 @@ header {
         justify-content: space-around;
     }
     .download-btn {
-        left: 8px !important;
+        left: 16px !important;
         top: 1120px;
         height: 95px;
         opacity: 1 !important;
@@ -198,9 +203,3 @@ header {
         width: 100% !important;
     }
 }
-
-// @media (max-width: 280px) {
-//     .download-btn {
-//         font-size: 16px !important;
-//     }
-// }
