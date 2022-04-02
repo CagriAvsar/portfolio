@@ -3,10 +3,16 @@
 
 <div class="main">
     <div class="child-container">
-        <div class="skill-img-cont" *ngFor="let skill of filteredSkills; let i = index" data-aos="flip-left">
+        <div class="skill-img-cont" *ngFor="let skill of filteredSkills; let i = index" data-aos="flip-left"
+            (mouseover)="skill.showDescription=true" (mouseleave)="skill.showDescription=false">
             <div class="skill-elem">
                 <img [src]="skill.image" alt="HTML/CSS">
                 <span>{{ skill.name }}</span>
+            </div>
+            <div *ngIf="skill.showDescription" class="skill-descriptiion">
+                <p>
+                    {{ skill.description }}
+                </p>
             </div>
         </div>
     </div>
