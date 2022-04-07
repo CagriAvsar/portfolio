@@ -1,4 +1,5 @@
 .form-container {
+    position: relative;
     background-color: var(--gold-color);
     margin-top: 220px;
     padding: 66px 72px 66px 66px;
@@ -24,10 +25,16 @@
                 margin-bottom: 50px;
                 padding: 8px;
                 border: none;
+                &:focus {
+                    outline: none;
+                }
             }
             textarea {
                 border: none;
                 padding: 4px 6px;
+                &:focus {
+                    outline: none;
+                }
             }
             button {
                 background: #0F0F10;
@@ -44,6 +51,21 @@
             }
         }
     }
+}
+
+.mailSuccess {
+    position: absolute; 
+    top: 200px;
+    left: 500px;
+    width: 400px;
+    height: 350px;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 255ms ease-in-out;
 }
 
 @media (max-width: 1200px) {

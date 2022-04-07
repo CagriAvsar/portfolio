@@ -3,7 +3,7 @@ header {
     .mylogo {
         position: absolute;
         top: 30px;
-        left: 60px;
+        left: 100px;
         height: 80px;
     }
     nav {
@@ -51,12 +51,12 @@ header {
     }
     .introduction-container {
         position: absolute;
-        top: 90px;
-        left: 66px;
+        top: 130px;
+        left: 100px;
         h1 {
             font-weight: bold;
             font-size: 60px;
-            line-height: 40px;
+            line-height: 90px;
             color: #000000;
             span {
                 color: var(--gold-color);
@@ -64,6 +64,7 @@ header {
             }
         }
         .social-media {
+            margin-top: 50px;
             a:nth-child(2n) {
                 margin-left: 12px;
             }
@@ -74,7 +75,7 @@ header {
     }
     .download-btn {
         position: absolute;
-        left: 66px;
+        left: 100px;
         bottom: 30px;
         padding: 30px 20px;
         width: 355px;
@@ -202,4 +203,15 @@ header {
         margin: 0;
         width: 100% !important;
     }
+}
+
+@media (min-width: 1500px) {
+
+
+    .profile-img {
+        width: 713px;
+        height: 860px;
+        background-repeat: no-repeat;
+    }
+
 }

@@ -1,6 +1,8 @@
 h1 {
-    padding-left: 66px;
+    padding-left: 100px;
     margin-top: 100px;
+    font-size: 60px;
+    line-height: 120px;
 }
 
 .mrgn-80 {
@@ -15,7 +17,7 @@ h1 {
     display: flex;
     justify-content: center;
     background-color: var(--gold-color);
-    margin: 0 66px;
+    margin: 0 100px;
     padding: 16px;
 
     .child-container {
@@ -40,6 +42,7 @@ h1 {
                 bottom: 80px;
                 border-radius: 100%;
                 padding: 8px;
+                box-shadow: 0px 9px 9px -2px var(--gold-color);;
             }
 
             span {
@@ -61,10 +64,11 @@ h1 {
             .skill-descriptiion {
                 z-index: 9999;
                 position: absolute;
-                top: -100px;
-                right: -95px;
-                left: 0;
+                top: 0px;
+                right: 0;
                 bottom: 0;
+                left: 0;
+              
                 height: 220px;
                 color: white;
                 background-color: rgba($color: #000000, $alpha: 0.8);
