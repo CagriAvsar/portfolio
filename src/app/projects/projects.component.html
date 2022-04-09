@@ -3,7 +3,7 @@
     <h1 id="project">My Projects</h1>
 
 
-    <div class="projects-container">
+    <div class="projects-container">  
 
         <div class="projects-btn-container">
             <button (click)="showProjects('all')">All</button>
@@ -12,10 +12,11 @@
         </div>
 
         <div class="project-description-container" *ngFor="let project of filteredProjects; let i = index">
-            <div class="project-img-container">
+            
+            <div class="project-img-container"  (mouseover)="project.hover= true;"  (mouseleave)="project.hover= false">
                 <img [src]="project.img" class="project-img" alt="Project Image" data-aos="fade-right">
-                <div class="overlay-img">
-                    <p> {{ project.name }} </p>
+                <div class="overlay-img" *ngIf="project.hover">
+                    <h1> <i>{{ project.name }}</i> </h1>
                     <p>{{ project.category }}</p>
                     <a href="{{ project.url }}" target="blank">
                         <button>VIEW</button>
@@ -27,9 +28,6 @@
                 <span class="description-content">
                     {{ project.description }}
                 </span>
-            </div>
-            <div>
-
             </div>
         </div>
     </div>

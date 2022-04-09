@@ -18,13 +18,6 @@ span {
     margin-left: 14px;
 }
 
-// .profile-img {
-    
-//     width: 850px;
-//     height: 850px;
-   
-// }
-
 
 
 
@@ -43,6 +36,15 @@ span {
 
     &:hover {
         opacity: 1;
+    }
+}
+
+.profile-img-container {
+    margin-top: 80px;
+    img {
+        margin: 0;
+        height: 800px;
+        width: 700px;
     }
 }
 
@@ -71,18 +73,19 @@ h1 {
     .social-media {
         margin-top: 50px;
 
-        a:nth-child(2n) {
+        a:nth-child(even) {
             margin-left: 16px;
         }
 
-        .profile-img {
-            width: 0px !important;
-            height: 0px !important;
+     
+    }
+
+    @media (max-width: 845px) {
+        .profile-img-container {
             img {
-                width: 25em !important;
-            height: 25em !important;
+                width: 100%;
+                height: 100%;
             }
-            
         }
     }
 

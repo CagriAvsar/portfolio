@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FirstSectionComponent } from './first-section/first-section.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +38,7 @@ import { FirstSectionComponent } from './first-section/first-section.component';
     FormsModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
