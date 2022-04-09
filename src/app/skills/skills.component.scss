@@ -1,5 +1,6 @@
 h1 {
-    padding-left: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
     margin-top: 100px;
     font-size: 60px;
     line-height: 120px;
@@ -10,14 +11,15 @@ h1 {
 }
 
 .main-container {
-    padding: 0 66px;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 
 .main {
     display: flex;
     justify-content: center;
     background-color: var(--gold-color);
-    margin: 0 100px;
+    margin: 0 300px;
     padding: 16px;
 
     .child-container {
@@ -79,17 +81,24 @@ h1 {
 }
 
 @media (max-width: 950px) {
-    h1 {
-        padding-left: 16px;
-    }
-
     .main {
         margin: 0 16px;
     }
-}
 
-@media (max-width: 700px) {
-    .skill-img-cont {
-        width: unset !important;
+    h1 {
+        padding: 0 16px;
     }
+//     h1 {
+//         padding-left: 16px;
+//     }
+
+//     .main {
+//         margin: 0 16px;
+//     }
+// }
+
+// @media (max-width: 700px) {
+//     .skill-img-cont {
+//         width: unset !important;
+//     }
 }

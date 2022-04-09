@@ -1,0 +1,90 @@
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:  300px;
+}
+
+
+h1 {
+    font-weight: bold;
+    font-size: 81px;
+    line-height: 164px;
+    color: #000000;
+}
+
+span {
+    color: var(--gold-color);
+    margin-left: 14px;
+}
+
+// .profile-img {
+    
+//     width: 850px;
+//     height: 850px;
+   
+// }
+
+
+
+
+.download-btn {
+    padding: 30px 20px;
+    margin-top: 80px;
+    width: 355px;
+    border: none;
+    cursor: pointer;
+    background: var(--gold-color);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 8.29714px;
+    opacity: 0.9;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+
+// ##############################################################
+// RESPONSIVE
+// ##############################################################
+
+@media (max-width: 991px) {
+    .main-container {
+        flex-direction: column-reverse;
+        padding: 0 16px;
+    }
+
+h1 {
+    font-size: 53px;
+    line-height: 86px;
+}
+}
+
+    .introduction-container {
+        margin-top: 100px;
+    }
+
+    .social-media {
+        margin-top: 50px;
+
+        a:nth-child(2n) {
+            margin-left: 16px;
+        }
+
+        .profile-img {
+            width: 0px !important;
+            height: 0px !important;
+            img {
+                width: 25em !important;
+            height: 25em !important;
+            }
+            
+        }
+    }
+
+    
+

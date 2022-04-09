@@ -1,126 +1,96 @@
 header {
-    height: 100vh;
-    .mylogo {
-        position: absolute;
-        top: 30px;
-        left: 100px;
-        height: 80px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+
+    background-color: rgba(211, 211, 211, 0.795);
+    color: var(--gold-color);
+
+    .nav-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 300px;
     }
+
     nav {
-        position: absolute;
-        top: 60.5px;
-        left: 386px;
-        height: 24px;
-        z-index: 1;
+
         display: flex;
         justify-content: space-between;
         width: 475px;
+        
+
         a {
             font-weight: 500;
             font-size: 16px;
             line-height: 24px;
             letter-spacing: 6.33143px;
-            color: #000000;
+            color: black;
             text-decoration: none;
             transition: 250ms ease-in-out;
             margin: 0;
+
             &:hover {
-                color: var(--gold-color);
+               color: var(--gold-color);
                 transform: scaleX(0.9);
             }
         }
     }
-    .profile-img {
-        background-image: url('../../assets/imgs/profile_img.JPG');
-        z-index: 2;
-        position: absolute;
-        right: 0px;
-        top: 90px;
-        width: 580px;
-        height: 564px;
-        background-position: center;
+
+
+   
+
+
+        
+    
+
+  
+    img {
+        width: 45px;
     }
-    .background {
+}
+
+
+
+//######### ASIDE MENU #########
+.phone-menu-container {
+    position: relative;
+    overflow: hidden;
+
+    aside {
+        transition: 225ms ease-in-out;
         position: absolute;
-        top: 0;
         right: 0;
-        bottom: 66px;
-        // left: 321px;
-        width: 80%;
-        background: #fafafa;
-    }
-    .introduction-container {
-        position: absolute;
-        top: 130px;
-        left: 100px;
-        h1 {
-            font-weight: bold;
-            font-size: 60px;
-            line-height: 90px;
-            color: #000000;
-            span {
-                color: var(--gold-color);
-                margin-left: 14px;
-            }
-        }
-        .social-media {
-            margin-top: 50px;
-            a:nth-child(2n) {
-                margin-left: 12px;
-            }
-        }
-        img {
-            width: 45px;
-        }
-    }
-    .download-btn {
-        position: absolute;
-        left: 100px;
-        bottom: 30px;
-        padding: 30px 20px;
-        width: 355px;
-        border: none;
-        cursor: pointer;
-        background: var(--gold-color);
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 36px;
-        letter-spacing: 8.29714px;
-        opacity: 0.9;
-        &:hover {
-            opacity: 1;
-        }
-    }
-    //######### ASIDE MENU #########
-    .phone-menu-container {
-        position: relative;
-        overflow: hidden;
-        aside {
-            transition: 225ms ease-in-out;
-            position: absolute;
-            right: 0;
-            top: 80px;
-            bottom: 40px;
-            transform: translateX(300px);
-            .side-menu {
-                display: flex;
-                flex-direction: column;
-                background-color: rgba(246, 246, 246, 0.5);
-                height: 100%;
-                width: 250px;
-                z-index: 99;
-                padding: 20px;
-                a {
-                    text-decoration: none;
-                    color: #000;
-                    font-weight: bold;
-                    font-size: 25px;
-                    margin-top: 45px;
-                }
+        top: 80px;
+        bottom: 40px;
+        transform: translateX(300px);
+
+        .side-menu {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(246, 246, 246, 0.5);
+            height: 100%;
+            width: 250px;
+            z-index: 99;
+            padding: 20px;
+
+            a {
+                text-decoration: none;
+                color: #000;
+                font-weight: bold;
+                font-size: 25px;
+                margin-top: 45px;
             }
         }
     }
 }
+
 
 // ###################################################################
 // ###################################################################
@@ -131,20 +101,24 @@ header {
     header {
         display: flex;
         flex-direction: column;
+
         .mylogo {
             height: 50px;
             top: 1em;
             left: 1.2em;
         }
+
         nav {
             top: 18px;
             right: 8px;
             left: 0;
             width: 100%;
             justify-content: flex-end;
+
             a {
                 display: none;
             }
+
             img {
                 width: 35px;
                 height: 35px;
@@ -153,6 +127,7 @@ header {
                 z-index: 20;
             }
         }
+
         .profile-responsiv-img {
             display: block;
             margin-top: 80px;
@@ -161,32 +136,39 @@ header {
             object-fit: cover;
         }
     }
+
     .profile-img {
         display: none;
     }
+
     .background {
         display: none;
     }
+
     .introduction-container {
         top: 770px !important;
         left: 16px !important;
         right: 0;
         display: flex;
         flex-direction: column-reverse;
+
         h1 {
             margin: 0;
+
             p {
                 font-size: 45px;
             }
         }
     }
+
     .social-media {
         display: flex;
         justify-content: space-around;
     }
+
     .download-btn {
         left: 16px !important;
-        top: 1120px;
+        top: 50em;
         height: 95px;
         opacity: 1 !important;
     }
@@ -198,6 +180,7 @@ header {
         top: 29px;
         width: 90%;
     }
+
     .download-btn {
         padding: 0 !important;
         margin: 0;
@@ -205,13 +188,3 @@ header {
     }
 }
 
-@media (min-width: 1500px) {
-
-
-    .profile-img {
-        width: 713px;
-        height: 860px;
-        background-repeat: no-repeat;
-    }
-
-}

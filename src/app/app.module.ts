@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { WorkSectionComponent } from './work-section/work-section.component';
+
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { FormSectionComponent } from './form-section/form-section.component';
@@ -16,18 +16,19 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { AngularScrollAnimationsModule } from "angular-scroll-animations";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FirstSectionComponent } from './first-section/first-section.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    WorkSectionComponent,
     ProjectsComponent,
     AboutComponent,
     FormSectionComponent,
     FooterComponent,
-    SkillsComponent
+    SkillsComponent,
+    FirstSectionComponent
   ],
   imports: [
     BrowserModule,

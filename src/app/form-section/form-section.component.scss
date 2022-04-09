@@ -2,6 +2,8 @@
     position: relative;
     background-color: var(--gold-color);
     margin-top: 220px;
+    margin-right: 300px;
+    margin-left: 300px;
     padding: 66px 72px 66px 66px;
     display: flex;
     justify-content: space-between;
@@ -68,10 +70,10 @@
     transition: all 255ms ease-in-out;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 991px) {
     .form-container {
         flex-direction: column;
-        margin-top: 90px;
+        margin:  0 16px;
         .form-content {
             max-width: 100%;
             h1 {
