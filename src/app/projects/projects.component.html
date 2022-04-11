@@ -14,7 +14,7 @@
         <div class="project-description-container" *ngFor="let project of filteredProjects; let i = index">
             
             <div class="project-img-container"  (mouseover)="project.hover= true;"  (mouseleave)="project.hover= false">
-                <img [src]="project.img" class="project-img" alt="Project Image" data-aos="fade-right">
+                <img [src]="project.img" alt="Project Image" data-aos="fade-right">
                 <div class="overlay-img" *ngIf="project.hover">
                     <h1> <i>{{ project.name }}</i> </h1>
                     <p>{{ project.category }}</p>
@@ -23,6 +23,7 @@
                     </a>
                 </div>
             </div>
+
             <div class="description-content-container" data-aos="fade-left">
                 <h3 class="description-headline">{{ project.name }}</h3>
                 <span class="description-content">

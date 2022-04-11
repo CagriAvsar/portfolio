@@ -3,7 +3,7 @@
     padding-right: 300px;
 
     h1 {
-        font-size: 60px;
+        font-size: var(--headline-size);
         line-height: 120px;
     }
 
@@ -24,25 +24,21 @@
                 font-weight: 500;
                 border: none;
                 border-radius: 4px;
+                width: 280px;
                 cursor: pointer;
                 letter-spacing: 6px;
                 background-color: var(--gold-color);
-
-                :hover {
-                    background-color: #000;
-                }
             }
         }
 
+
+
         .project-description-container {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             margin-bottom: 64px;
+            gap: 60px;
 
-            // .project-description-container:nth-child(2) {
-            //     flex-direction: row-reverse;
-            // }
 
             .description-headline {
                 font-weight: bold;
@@ -65,10 +61,11 @@
             }
 
             img {
-                height: 300px;
-                width: 500px;
+                height: 100%;
+                width: 100%;
                 object-fit: contain;
                 transition: 255ms ease-in-out;
+
             }
         }
 
@@ -82,12 +79,14 @@
             justify-content: center;
             align-items: center;
             transition: all 225ms ease-in-out;
+            height: 300px;
+            width: 500px;
 
-            &:hover .project-img {
-                filter: blur(2px);
-                transform: scale(1);
+            img {
+                object-fit: cover;
             }
         }
+
 
         .overlay-img {
             opacity: 1;
@@ -102,8 +101,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.75);
             color: white;
+
 
             h1 {
                 color: var(--gold-color);
@@ -121,12 +121,9 @@
                     background-color: var(--gold-color);
                     letter-spacing: 5px;
                     font-weight: 700;
-
-                    :hover {
-                        background-color: red;
-                    }
                 }
             }
+
         }
     }
 }
@@ -170,6 +167,7 @@
                 }
             }
 
+
             .project-img-container {
                 width: 100%;
 
@@ -188,7 +186,7 @@
         padding: 0 16px !important;
 
         h1 {
-            font-size: 45px;
+            font-size: 2em;
         }
     }
 
@@ -213,12 +211,15 @@
     }
 
     .projects-btn-container {
-        align-items: inherit !important;
+
         flex-direction: column;
     }
 
     .overlay-img {
         align-items: center;
         font-size: 21px !important;
+        h1 {
+            font-size: 2em;
+        }
     }
 }

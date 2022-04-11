@@ -1,7 +1,7 @@
 .form-container {
     position: relative;
     background-color: var(--gold-color);
-    margin-top: 220px;
+    margin-top: 120px;
     margin-right: 300px;
     margin-left: 300px;
     padding: 66px 72px 66px 66px;
@@ -11,7 +11,7 @@
         max-width: 50%;
         h1 {
             font-weight: bold;
-            font-size: 60px;
+            font-size: 50px;
             line-height: 90px;
         }
     }
@@ -68,7 +68,10 @@
     align-items: center;
     color: white;
     transition: all 255ms ease-in-out;
+
 }
+
+
 
 @media (max-width: 991px) {
     .form-container {

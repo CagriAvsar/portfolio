@@ -11,8 +11,8 @@
     padding-left: 300px;
     padding-right: 300px;
     h1 {
-        font-weight: bold;
-        font-size: 80px;
+        
+        font-size: var(--headline-size);
         line-height: 120px;
     }
     .about-me {

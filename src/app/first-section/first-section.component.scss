@@ -2,15 +2,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left:  300px;
+    padding-left: 300px;
+    margin-top: 30px;
 }
 
 
 h1 {
     font-weight: bold;
-    font-size: 81px;
-    line-height: 164px;
+    font-size: 63px;
+    line-height: 93px;
     color: #000000;
+    margin: 0;
+    p{
+        margin: 0;
+    }
 }
 
 span {
@@ -18,33 +23,43 @@ span {
     margin-left: 14px;
 }
 
+.social-media {
+    img {
+        height: 50px;
+    }
+}
 
 
+.dwnl-btn-container {
+    margin-top: 50px;  
+    .download-btn {
+        padding: 25px;
+        width: 315px;
+        border: none;
+        cursor: pointer;
+        background: var(--gold-color);
+        font-weight: 500;
+        font-size: 20px;
+       
+        letter-spacing: 6.29714px;
+        opacity: 0.9;
 
-.download-btn {
-    padding: 30px 20px;
-    margin-top: 80px;
-    width: 355px;
-    border: none;
-    cursor: pointer;
-    background: var(--gold-color);
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 8.29714px;
-    opacity: 0.9;
-
-    &:hover {
-        opacity: 1;
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
 .profile-img-container {
-    margin-top: 80px;
+    margin-top: 70px;
+    padding-right: 300px;
+
     img {
         margin: 0;
-        height: 800px;
-        width: 700px;
+        height: 450px;
+        width: 350px;
+        border-radius: 15px;
+        border: 1px solid #262626;
     }
 }
 
@@ -58,36 +73,37 @@ span {
     .main-container {
         flex-direction: column-reverse;
         padding: 0 16px;
+        align-items: unset;
     }
 
-h1 {
-    font-size: 53px;
-    line-height: 86px;
+    h1 {
+        font-size: 53px;
+        line-height: 86px;
+    }
 }
+
+.introduction-container {
+    margin-top: 100px;
 }
 
-    .introduction-container {
-        margin-top: 100px;
+.social-media {
+    margin-top: 50px;
+
+    a:nth-child(even) {
+        margin-left: 16px;
     }
 
-    .social-media {
-        margin-top: 50px;
 
-        a:nth-child(even) {
-            margin-left: 16px;
-        }
+}
 
-     
-    }
+@media (max-width: 845px) {
+    .profile-img-container {
+        padding: 0;
+        margin-top: 115px;
 
-    @media (max-width: 845px) {
-        .profile-img-container {
-            img {
-                width: 100%;
-                height: 100%;
-            }
+        img {
+            width: 100%;
+            height: 100%;
         }
     }
-
-    
-
+}
