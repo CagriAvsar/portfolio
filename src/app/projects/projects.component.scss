@@ -28,9 +28,13 @@
                 cursor: pointer;
                 letter-spacing: 6px;
                 background-color: var(--gold-color);
+                transition: all 255ms ease-in-out;
+                &:hover {
+                    filter: brightness(1.04);
+                    letter-spacing: 7.5px;
+                }
             }
         }
-
 
 
         .project-description-container {
@@ -211,8 +215,10 @@
     }
 
     .projects-btn-container {
-
         flex-direction: column;
+        button {
+            width: 100% !important;
+        }
     }
 
     .overlay-img {

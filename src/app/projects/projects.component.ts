@@ -20,7 +20,7 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'Weather Website',
       img: 'assets/imgs/weatherApp.png',
-      description: 'Angular-based web-app, who shows you the weather of your searched city.',
+      description: 'Come rain or shine, the app will keep you in a good mood. Click in and don´t forget the umbrella',
       url: 'http://cagri-avsar.developerakademie.com/weather-website/',
       category: 'Angular',
       
