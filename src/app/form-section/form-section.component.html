@@ -1,7 +1,7 @@
 <div class="form-container">
 
     <div class="form-content">
-        <h1>Let`s talk about Business</h1>
+        <h1>Contact Me</h1>
         <span>
             Now that you know a lot about me, let me know if you are interested to work with me.
         </span>
@@ -18,8 +18,7 @@
             <label for="">Message</label>
             <textarea name="text" rows="10" placeholder="What would you like to tell me?" required
                 [(ngModel)]="contact.message" name="message" #message="ngModel"></textarea>
-            <button type="submit" [disabled]="!contactForm.form.valid" (click)="showSending()">LET`S GET
-                STARTED</button>
+            <button type="submit" [disabled]="!contactForm.form.valid" (click)="showSending()">SEND MAIL</button>
         </form>
     </div>
 

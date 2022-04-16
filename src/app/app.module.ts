@@ -17,6 +17,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { AngularScrollAnimationsModule } from "angular-scroll-animations";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FirstSectionComponent } from './first-section/first-section.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { MainSectionComponent } from './main-section/main-section.component';
 
 
 
@@ -29,7 +31,9 @@ import { FirstSectionComponent } from './first-section/first-section.component';
     FormSectionComponent,
     FooterComponent,
     SkillsComponent,
-    FirstSectionComponent
+    FirstSectionComponent,
+    ImprintComponent,
+    MainSectionComponent
   ],
   imports: [
     BrowserModule,
