@@ -38,7 +38,7 @@ export class ProjectsComponent implements OnInit {
       name: 'Ring of Fire',
       img: 'assets/imgs/ringOfFire.png',
       description: 'A game that turns every party into an experience. Whether it`s with friends or family, pick a card and see what happens.',
-      url: 'http://cagri-avsar.developerakademie.com/ringoffire/index.html',
+      url: 'http://cagri-avsar.developerakademie.com/ring-of-fire/index.html',
       category: 'Angular',
       hover: false
     }

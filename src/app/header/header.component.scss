@@ -11,13 +11,11 @@ header {
     background-color: rgb(247 247 247 / 92%);
     color: var(--gold-color);
     filter: blur(2);
-
     // class activ when scrolled
     .scrolled-header {
         background-color: rgba(176, 176, 176, 0.788);
         filter: blur(2);
     }
-
     .nav-container {
         width: 100%;
         display: flex;
@@ -25,13 +23,10 @@ header {
         align-items: center;
         padding: 10px 300px;
     }
-
     nav {
-
         display: flex;
         justify-content: space-between;
         width: 475px;
-
         a {
             font-weight: 500;
             font-size: 16px;
@@ -41,28 +36,20 @@ header {
             text-decoration: none;
             transition: 250ms ease-in-out;
             margin: 0;
-
             &:hover {
                 color: var(--gold-color);
                 transform: scaleX(0.9);
             }
         }
     }
-
     .my-logo {
         width: 85px;
+        cursor: pointer;
     }
-
-
-
-
-
     img {
         width: 45px;
     }
 }
-
-
 
 // ###################################################################
 // ###################################################################
@@ -76,28 +63,22 @@ header {
             top: 1em;
             left: 1.2em;
         }
-
         .nav-container {
-            padding: unset;
+            padding: 0 16px;
         }
-
         nav {
             top: 18px;
             right: 8px;
             left: 0;
             width: 100%;
             justify-content: center;
-
             a {
                 font-size: 12px;
                 letter-spacing: unset;
-
             }
-
             a:nth-child(even) {
                 margin: 0 35px;
             }
-
             img {
                 width: 35px;
                 height: 35px;
@@ -106,14 +87,11 @@ header {
                 z-index: 20;
             }
         }
-
         .phone-menu-container {
             display: block !important;
             height: 80px;
         }
     }
-
-
     .introduction-container {
         top: 770px !important;
         left: 16px !important;
@@ -121,12 +99,10 @@ header {
         display: flex;
         flex-direction: column-reverse;
     }
-
     .social-media {
         display: flex;
         justify-content: space-around;
     }
-
     .download-btn {
         left: 16px !important;
         top: 50em;
@@ -141,7 +117,6 @@ header {
         top: 29px;
         width: 90%;
     }
-
     .download-btn {
         padding: 0 !important;
         margin: 0;
